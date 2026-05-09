@@ -10,8 +10,8 @@ This repository is a collection of data science projects inspired by various onl
 The repository is organized into three main sections:
 
 - **Data Analysis**: Projects focused on data exploration, visualization, and analysis.
-- **Deep Learning**: Projects involving neural networks, deep learning models, and advanced AI techniques.
 - **Machine Learning**: Projects covering traditional machine learning algorithms, supervised and unsupervised learning.
+- **Deep Learning**: Projects involving neural networks, deep learning models, and advanced AI techniques.
 
 ## Requirements
 
