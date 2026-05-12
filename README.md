@@ -4,6 +4,9 @@ This repository is a collection of data science projects inspired by various onl
 
 - **Python for Data Science and Machine Learning Bootcamp** by Jose Portilla
 - **Machine Learning A-Z** by Kirill Eremenko and Hadelin de Ponteves
+
+And from MIT OpenCourseWare:
+
 - **MIT 6.100L** by Dr. Ana Bell
 
 ## Project Structure
