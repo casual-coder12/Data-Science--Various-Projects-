@@ -1,6 +1,6 @@
 ## US Temperatures
 
-This is a capstone project that aims to analyze and visualize the temperature data in various cities across the United States. The project uses **Python Matplotlib and Pandas** libraries to create a visual representation of the data, allowing users to explore and analyze the data in a more intuitive and interactive manner.
+This is a major project that aims to analyze and visualize the temperature data in various cities across the United States. The project uses **Python Matplotlib and Pandas** libraries to create a visual representation of the data, allowing users to explore and analyze the data in a more intuitive and interactive manner.
 
 ## Credits and Data Source
 
