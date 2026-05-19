@@ -17,7 +17,7 @@ The dataset contains 9568 observations collected from a Combined Cycle Power Pla
 ### Target Variable:
 - **PE** - Net hourly electrical energy output (MW)
 
-## 🗂️ Project Structure
+## 🗂️ Project Structure (To Be Updated)
 
 ```
 .
@@ -88,11 +88,15 @@ The dataset contains 9568 observations collected from a Combined Cycle Power Pla
 
 All models will be evaluated and compared using the following metrics:
 
+| Metric | Description | Goal |
+|--------|-------------|------|
 | **R² Score** | Coefficient of determination | Higher is better (max 1.0) |
 | **MAE** | Mean Absolute Error | Lower is better |
 | **MSE** | Mean Squared Error | Lower is better |
 | **RMSE** | Root Mean Squared Error | Lower is better |
 | **Relative MAE** | MAE as percentage of mean | Lower is better |
+
+## 📊 Model Comparison (To Be Updated)
 
 |----------|------|-------|------|---------|---------------|
 | R² Score |  MAE |  MSE  | RMSE | Rel MAE |     Model     |
@@ -149,7 +153,7 @@ A Data Science practice project focused on mastering regression techniques.
 
 ## Credits
 
-Data from Kaggle (https://www.kaggle.com/datasets/rinichristy/combined-cycle-power-plant-data-set-uci-data)
+Data from Kaggle (https://www.kaggle.com/datasets/rinichristy/combined-cycle-power-plant-data-set-uci-data/)
 Inspired by Udemy course "Machine Learning A-Z" (https://www.udemy.com/course-dashboard-redirect/?course_id=950390/)
 
 ## 📄 License
