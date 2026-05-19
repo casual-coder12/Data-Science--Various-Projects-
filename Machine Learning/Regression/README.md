@@ -98,10 +98,12 @@ All models will be evaluated and compared using the following metrics:
 
 ## 📊 Model Comparison (To Be Updated)
 
-| R² Score |  MAE |  MSE  | RMSE | Rel MAE |     Model     |
-|----------|------|-------|------|---------|---------------|
-|  0.9325  | 3.56 | 19.73 | 4.44 |  0.78%  | Multiple Linear Regression |
-|  0.9455  | 3.14 | 15.93 | 3.99 |  0.69%  | Polynomial Regression |
+|     Model     | R² Score | MAE |  MSE  | RMSE | Rel MAE |
+|---------------|----------|-----|-------|------|---------|
+| Multiple Linear Regression |  0.9325  | 3.56 | 19.73 | 4.44 |  0.78%  |
+| Polynomial Regression | 0.9455  | 3.14 | 15.93 | 3.99 |  0.69%  |
+| Decision Tree Regression | 0.9229  | 3.10 | 22.54 | 4.75 |  0.68%  |
+
 
 ## 🔍 Key Insights (So Far)
 
