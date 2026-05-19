@@ -98,7 +98,6 @@ All models will be evaluated and compared using the following metrics:
 
 ## 📊 Model Comparison (To Be Updated)
 
-|----------|------|-------|------|---------|---------------|
 | R² Score |  MAE |  MSE  | RMSE | Rel MAE |     Model     |
 |----------|------|-------|------|---------|---------------|
 |  0.9325  | 3.56 | 19.73 | 4.44 |  0.78%  | Multiple Linear Regression |
@@ -151,10 +150,10 @@ pip install pandas numpy matplotlib seaborn statsmodels scikit-learn jupyter
 
 A Data Science practice project focused on mastering regression techniques.
 
-## Credits
+## 📚 Credits
 
-Data from Kaggle (https://www.kaggle.com/datasets/rinichristy/combined-cycle-power-plant-data-set-uci-data/)
-Inspired by Udemy course "Machine Learning A-Z" (https://www.udemy.com/course-dashboard-redirect/?course_id=950390/)
+- **Dataset**: [Combined Cycle Power Plant Dataset](https://www.kaggle.com/datasets/rinichristy/combined-cycle-power-plant-data-set-uci-data/) from Kaggle
+- **Course**: Inspired by Udemy course [Machine Learning A-Z](https://www.udemy.com/course-dashboard-redirect/?course_id=950390/)
 
 ## 📄 License
 
