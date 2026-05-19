@@ -103,6 +103,7 @@ All models will be evaluated and compared using the following metrics:
 | Multiple Linear Regression |  0.9325  | 3.56 | 19.73 | 4.44 |  0.78%  |
 | Polynomial Regression | 0.9455  | 3.14 | 15.93 | 3.99 |  0.69%  |
 | Decision Tree Regression | 0.9229  | 3.10 | 22.54 | 4.75 |  0.68%  |
+| Random Forest Regression | 0.9616  | 2.45 | 11.23 | 3.35 |  0.54%  |
 
 
 ## 🔍 Key Insights (So Far)
@@ -112,6 +113,8 @@ Based on initial analysis:
 - **Exhaust Vacuum (V)** demonstrates a positive linear relationship with PE
 - **Ambient Pressure (AP)** shows a positive correlation with PE
 - **Relative Humidity (RH)** has a weak negative relationship with PE
+Results:
+- **Random Forest Regression Algorithm** gave **best results**
 
 ## 🛠️ Technologies & Libraries
 
