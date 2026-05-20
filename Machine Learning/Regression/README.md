@@ -144,12 +144,10 @@ pip install pandas numpy matplotlib seaborn statsmodels scikit-learn jupyter
 
 ## 📝 Future Work
 
-- [ ] Implement polynomial regression with degree optimization
 - [ ] Add regularization techniques (Ridge, Lasso, Elastic Net)
 - [ ] Explore ensemble methods (Random Forest, Gradient Boosting)
 - [ ] Perform feature engineering and selection
 - [ ] Implement cross-validation for robust model evaluation
-- [ ] Create final visualization dashboard comparing all models
 - [ ] Add hyperparameter tuning using GridSearchCV
 
 ## 👤 Author
