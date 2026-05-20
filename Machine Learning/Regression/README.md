@@ -25,7 +25,10 @@ The dataset contains 9568 observations collected from a Combined Cycle Power Pla
 ├── 01_data_visualisation.ipynb      # Exploratory Data Analysis & Visualization
 ├── 02_stats_models.ipynb            # Statistical Analysis using Statsmodels
 ├── 03_linear_regression.ipynb       # Multiple Linear Regression
-├── 04_polynomial_regression.ipynb   # Polynomial Regression (upcoming)
+├── 04_polynomial_regression.ipynb   # Polynomial Regression
+├── 05_decision_tree_regression.ipynb   # Decision Tree Regression
+├── 06_random_forrest_regression.ipynb   # Random Forrest Regression
+├── 07_support_vector_regression.ipynb   # Support Vector Regression (SVR)
 └── README.md                         # Project documentation
 ```
 
@@ -76,13 +79,41 @@ The dataset contains 9568 observations collected from a Combined Cycle Power Pla
   - Performance metrics calculation:
   - Overfitting analysis
 
-### 5️⃣ Additional Regression Models (Upcoming)
+### 5️⃣ Decision Tree Regression (`05_decision_tree_regression.ipynb`)
+- **Purpose**: Capture non-linear relationships
+- **Key Activities**:
+  - Train-test split (80-20)
+  - Model training
+  - Predictions visualization (actual vs predicted)
+  - Residual analysis and distribution
+  - Performance metrics calculation:
+  - Overfitting analysis
+
+### 6️⃣ Random Forrest Regression (`06_random_forrest_regression.ipynb`)
+- **Purpose**: Capture non-linear relationships
+- **Key Activities**:
+  - Train-test split (80-20)
+  - Model training with 10 decision trees
+  - Predictions visualization (actual vs predicted)
+  - Residual analysis and distribution
+  - Performance metrics calculation:
+  - Overfitting analysis
+
+### 7️⃣ Support Vector Regression (`07_support_vector_regression.ipynb`)
+- **Purpose**: Capture non-linear relationships
+- **Key Activities**:
+  - Train-test split (80-20)
+  - Feature transformation using Standard Scaler
+  - Model training with SVR and Radial Basis Function (Gaussian) as kernel
+  - Predictions visualization (actual vs predicted)
+  - Residual analysis and distribution
+  - Performance metrics calculation:
+  - Overfitting analysis
+
+### 8️⃣ Additional Regression Models (Upcoming)
 - Ridge Regression (L2 regularization)
 - Lasso Regression (L1 regularization)
 - Elastic Net (L1 + L2 regularization)
-- Support Vector Regression (SVR)
-- Decision Tree Regression
-- Random Forest Regression
 
 ## 📈 Performance Metrics
 
