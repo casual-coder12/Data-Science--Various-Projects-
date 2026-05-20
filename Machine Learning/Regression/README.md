@@ -104,6 +104,7 @@ All models will be evaluated and compared using the following metrics:
 | Polynomial Regression | 0.9455  | 3.14 | 15.93 | 3.99 |  0.69%  |
 | Decision Tree Regression | 0.9229  | 3.10 | 22.54 | 4.75 |  0.68%  |
 | Random Forest Regression | 0.9616  | 2.45 | 11.23 | 3.35 |  0.54%  |
+| Support Vector Regression | 0.9430  | 3.14 | 16.67 | 4.08 |  0.69%  |
 
 
 ## 🔍 Key Insights (So Far)
