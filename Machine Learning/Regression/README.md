@@ -138,7 +138,7 @@ All models will be evaluated and compared using the following metrics:
 | Support Vector Regression | 0.9430  | 3.14 | 16.67 | 4.08 |  0.69%  |
 
 
-## 🔍 Key Insights (So Far)
+## 🔍 Key Insights
 
 Based on initial analysis:
 - **Ambient Temperature (AT)** shows a strong negative correlation with Power Output (PE)
