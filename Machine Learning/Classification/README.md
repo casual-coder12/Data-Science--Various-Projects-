@@ -129,11 +129,11 @@ All models will be evaluated and compared using the following metrics:
 
 |     Model     | Class | Precision | Recall | F1-Score | Support | Accuracy | ROC-AUC |
 |---------------|-------|-----------|--------|----------|---------|----------|---------|
-| **Logistic Regression** | Benign (2) | 0.95 | 0.97 | 0.96 | 107 | 0.95 | TBD |
+| **Logistic Regression** | Benign (2) | 0.95 | 0.97 | 0.96 | 107 | 0.95 | 0.95 |
 |  | Malignant (4) | 0.95 | 0.92 | 0.94 | 64 |  |  |
-| **Naive Bayes** | Benign (2) | 0.99 | 0.93 | 0.96 | 107 | 0.95 | TBD |
+| **Naive Bayes** | Benign (2) | 0.99 | 0.93 | 0.96 | 107 | 0.95 | 0.95 |
 |  | Malignant (4) | 0.90 | 0.98 | 0.94 | 64 |  |  |
-| **K-Nearest Neighbors** | Benign (2) | 0.97 | 0.97 | 0.97 | 107 | 0.96 | TBD |
+| **K-Nearest Neighbors** | Benign (2) | 0.97 | 0.97 | 0.97 | 107 | 0.96 | 0.96 |
 |  | Malignant (4) | 0.95 | 0.95 | 0.95 | 64 |  |  |
 | **Support Vector Machine** | Benign (2) | TBD | TBD | TBD | TBD | TBD | TBD |
 |  | Malignant (4) | TBD | TBD | TBD | TBD |  |  |
