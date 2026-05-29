@@ -137,10 +137,10 @@ All models will be evaluated and compared using the following metrics:
 |  | Malignant (4) | 0.95 | 0.95 | 0.95 | 64 |  |  |
 | **Support Vector Machine** | Benign (2) | TBD | TBD | TBD | TBD | TBD | TBD |
 |  | Malignant (4) | TBD | TBD | TBD | TBD |  |  |
-| **Decision Tree** | Benign (2) | TBD | TBD | TBD | TBD | TBD | TBD |
-|  | Malignant (4) | TBD | TBD | TBD | TBD |  |  |
-| **Random Forest** | Benign (2) | TBD | TBD | TBD | TBD | TBD | TBD |
-|  | Malignant (4) | TBD | TBD | TBD | TBD |  |  |
+| **Decision Tree** | Benign (2) | 0.94 | 0.95 | 0.94 | 107 | 0.93 | 0.92 |
+|  | Malignant (4) | 0.92 | 0.89 | 0.90 | 64 |  |  |
+| **Random Forest** | Benign (2) | 0.97| 0.96 | 0.97 | 107 | 0.96 | 0.96 |
+|  | Malignant (4) | 0.94 | 0.95 | 0.95 | 64 |  |  |
 
 **Note**: 
 - **Benign (2)**: Non-cancerous tumors
