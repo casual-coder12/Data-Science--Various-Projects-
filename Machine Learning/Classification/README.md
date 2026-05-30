@@ -32,13 +32,16 @@ The dataset contains 683 observations from breast cancer biopsies collected at t
 
 ```
 .
-├── Data.csv                          # Breast Cancer Wisconsin dataset
-├── 01_data_visualisation.ipynb      # Exploratory Data Analysis & Visualization
-├── 02_stats_models.ipynb            # Statistical Analysis using Statsmodels
-├── 03_logistic_regression.ipynb     # Logistic Regression Classification
-├── 04_naive_bayes.ipynb             # Naive Bayes Classifier
-├── 05_k_nearest_neighbours.ipynb    # K-Nearest Neighbors (KNN) Classifier
-└── README.md                         # Project documentation
+├── Data.csv                            # Breast Cancer Wisconsin dataset
+├── 01_data_visualisation.ipynb         # Exploratory Data Analysis & Visualization
+├── 02_stats_models.ipynb               # Statistical Analysis using Statsmodels
+├── 03_logistic_regression.ipynb        # Logistic Regression Classification
+├── 04_naive_bayes.ipynb                # Naive Bayes Classifier
+├── 05_k_nearest_neighbours.ipynb       # K-Nearest Neighbors (KNN) Classifier
+├── 06_decision_tree.ipynb              # Decision Tree Classifier
+├── 07_random_forest.ipynb              # Random Forest Classifier
+├── 08_support_vector_machine.ipynb     # Support Vector Machine Classifier
+└── README.md                           # Project documentation
 ```
 
 ## 📓 Notebooks Description
@@ -100,12 +103,48 @@ The dataset contains 683 observations from breast cancer biopsies collected at t
   - Performance metrics calculation
   - Distance metric analysis
 
-### 6️⃣ Additional Classification Algorithms (Upcoming)
-- Support Vector Machine (SVM)
-- Decision Tree Classifier
-- Random Forest Classifier
+### 6️⃣ Decision Tree (`06_decision_tree.ipynb`)
+- **Purpose**: Tree-based classification using Decision Tree algorithm
+- **Key Activities**:
+  - Train-test split (80-20)
+  - Decision Tree Classifier implementation
+  - Tree structure visualization
+  - Feature importance analysis
+  - Confusion matrix visualization
+  - Performance metrics evaluation
+  - Model interpretability and decision rules
+  - Pruning strategies to avoid overfitting
+
+### 7️⃣ Random Forest (`07_random_forest.ipynb`)
+- **Purpose**: Ensemble learning using Random Forest algorithm
+- **Key Activities**:
+  - Train-test split (80-20)
+  - Random Forest Classifier with multiple decision trees
+  - Ensemble predictions through voting
+  - Feature importance ranking
+  - Out-of-bag (OOB) score evaluation
+  - Confusion matrix analysis
+  - Performance metrics calculation
+  - Comparison with single Decision Tree
+  - Hyperparameter tuning (n_estimators, max_depth)
+
+### 8️⃣ Support Vector Machine (`08_support_vector_machine.ipynb`)
+- **Purpose**: Maximum-margin classification using SVM
+- **Key Activities**:
+  - Train-test split (80-20)
+  - Feature scaling/normalization (required for SVM)
+  - SVM Classifier with different kernel options
+  - Kernel selection (linear, RBF, polynomial)
+  - Hyperparameter tuning (C, gamma)
+  - Support vector identification
+  - Decision boundary visualization
+  - Confusion matrix visualization
+  - Performance metrics evaluation
+  - Comparison with other classifiers
+
+### 9️⃣ Additional Classification Algorithms (Upcoming)
+
 - Gradient Boosting Machines (XGBoost, LightGBM)
-- Ensemble Methods
 
 ## 📈 Performance Metrics
 
@@ -134,12 +173,12 @@ All models will be evaluated and compared using the following metrics:
 |  | Malignant (4) | 0.90 | 0.98 | 0.94 | 64 |  |  |
 | **K-Nearest Neighbors** | Benign (2) | 0.97 | 0.97 | 0.97 | 107 | 0.96 | 0.96 |
 |  | Malignant (4) | 0.95 | 0.95 | 0.95 | 64 |  |  |
-|  | Malignant (4) | TBD | TBD | TBD | TBD |  |  |
 | **Decision Tree** | Benign (2) | 0.94 | 0.95 | 0.94 | 107 | 0.93 | 0.92 |
 |  | Malignant (4) | 0.92 | 0.89 | 0.90 | 64 |  |  |
 | **Random Forest** | Benign (2) | 0.97| 0.96 | 0.97 | 107 | 0.96 | 0.96 |
 |  | Malignant (4) | 0.94 | 0.95 | 0.95 | 64 |  |  |
-| **Support Vector Machine** | Benign (2) | TBD | TBD | TBD | TBD | TBD | TBD |
+| **Support Vector Machine** | Benign (2) | 0.97 | 0.96 | 0.97 | 107 | 0.96 | 0.96 |
+|  | Malignant (4) | 0.94 | 0.95 | 0.95 | 64 |  |  |
 
 **Note**: 
 - **Benign (2)**: Non-cancerous tumors
