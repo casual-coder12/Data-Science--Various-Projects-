@@ -182,10 +182,6 @@ This project showcases fundamental deep learning concepts:
 - For production use, consider using established frameworks like TensorFlow or PyTorch
 - The model uses the entire dataset for training without a validation or test set
 
-## 👨‍💻 Author
-
-Data Science Portfolio Project - Neural Network from Scratch
-
 ---
 
 *This project demonstrates a fundamental understanding of neural networks and serves as a foundation for more advanced deep learning projects.*
