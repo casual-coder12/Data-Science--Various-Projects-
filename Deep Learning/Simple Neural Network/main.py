@@ -38,7 +38,7 @@ def sigmoid_derivative(a):
     # Derivative of the sigmoid function expressed in terms of the activation 'a'
     return a * (1 - a)
 
-lr = 0.5l  # Learning rate
+lr = 0.5  # Learning rate
 
 for epoch in range(10000):
     # --- FORWARD PASS ---
