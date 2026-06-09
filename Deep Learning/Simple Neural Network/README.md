@@ -47,7 +47,7 @@ Output Layer (1 neuron with Sigmoid activation)
 
 ### Architecture Details:
 - **Input Layer**: 2 neurons (Age, EstimatedSalary)
-- **Hidden Layer**: 100 neurons
+- **Hidden Layer**: 10 neurons
   - Activation: Sigmoid function
   - Weights initialized: Random normal distribution × 0.1
   - Biases initialized: Zeros
@@ -61,12 +61,14 @@ Output Layer (1 neuron with Sigmoid activation)
 ```python
 - numpy: For numerical computations
 - pandas: For data loading and manipulation
+- sklearn.model_selection.train_test_split: For splitting data into train/test sets
 - sklearn.preprocessing.StandardScaler: For feature normalization
 ```
 
 ### Key Components:
 
 #### 1. **Data Preprocessing**
+- **Train-Test Split**: Data is split into 80% training (320 samples) and 20% testing (80 samples) with random_state=42
 - **Feature Scaling**: StandardScaler is applied to normalize features (Age and EstimatedSalary)
 - This ensures both features contribute equally to the model, preventing features with larger values from dominating
 
@@ -87,7 +89,7 @@ J = -1/N × Σ[y × log(ŷ) + (1-y) × log(1-ŷ)]
 - **Algorithm**: Gradient Descent with Backpropagation
 - **Learning Rate**: 1.0
 - **Epochs**: 4000
-- **Batch Size**: Full batch (all 400 samples)
+- **Batch Size**: Full batch (320 training samples)
 
 ### Training Steps:
 1. **Forward Pass**:
@@ -118,9 +120,9 @@ python main.py
 
 ### Expected Output:
 The script will display:
-- Loss value every 100 epochs
-- Final loss after training
-- Model accuracy on the training data
+- Loss value every 100 epochs during training
+- Final loss and accuracy on the training set
+- Model accuracy on the testing set
 
 Example output:
 ```
@@ -130,9 +132,12 @@ Epoch  200, Loss: 0.362841
 ...
 Epoch 3900, Loss: 0.241563
 
---- RESULTS ---
-Final Loss: 0.220348
-Model Accuracy: 92.50%
+--- TRAINING SET RESULTS ---
+Final Loss on Training Set: 0.220348
+Model Accuracy on Training Set: 92.50%
+
+--- TESTING SET RESULTS ---
+Model Accuracy on Testing Set: 90.00%
 ```
 
 ## 📈 Model Evaluation
@@ -168,13 +173,14 @@ This project showcases fundamental deep learning concepts:
 
 ## 🔍 Potential Improvements
 
-1. **Train-Test Split**: Currently evaluates on training data only
+1. **Validation Set**: Add a separate validation set for hyperparameter tuning
 2. **Regularization**: Add L2 regularization to prevent overfitting
 3. **Learning Rate Scheduling**: Decrease learning rate over time
 4. **Different Activations**: Try ReLU for hidden layers
 5. **Cross-Validation**: Implement k-fold cross-validation
 6. **Hyperparameter Tuning**: Optimize neurons, learning rate, epochs
 7. **Visualization**: Add loss curves and decision boundary plots
+8. **Mini-batch Training**: Implement mini-batch gradient descent for better generalization
 
 ## 📝 Notes
 
