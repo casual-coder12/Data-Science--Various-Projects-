@@ -133,11 +133,11 @@ Epoch  200, Loss: 0.362841
 Epoch 3900, Loss: 0.241563
 
 --- TRAINING SET RESULTS ---
-Final Loss on Training Set: 0.220348
-Model Accuracy on Training Set: 92.50%
+Final Loss on Training Set: 0.232993
+Model Accuracy on Training Set: 91.88%
 
 --- TESTING SET RESULTS ---
-Model Accuracy on Testing Set: 90.00%
+Model Accuracy on Testing Set: 95.00%
 ```
 
 ## 📈 Model Evaluation
