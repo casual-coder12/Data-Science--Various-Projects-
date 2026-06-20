@@ -90,8 +90,8 @@ J = -1/N × Σ[y × log(ŷ) + (1-y) × log(1-ŷ)] + (λ/2N) × Σ(W²)
 
 #### 4. **Training Process**
 - **Algorithm**: Gradient Descent with Backpropagation
-- **Learning Rate**: 1.0
-- **Epochs**: 4000
+- **Learning Rate**: 0.6
+- **Epochs**: 20000
 - **Batch Size**: Full batch (320 training samples)
 
 ### Training Steps:
@@ -124,24 +124,24 @@ python main.py
 
 ### Expected Output:
 The script will display:
-- Loss value every 100 epochs during training
+- Loss value every 1000 epochs during training
 - Final loss and accuracy on the training set
 - Model accuracy on the testing set
 
 Example output:
 ```
-Epoch    0, Loss: 0.693147
-Epoch  100, Loss: 0.427158
-Epoch  200, Loss: 0.362841
+Epoch    0, Loss: 0.675787
+Epoch 1000, Loss: 0.347048
+Epoch 2000, Loss: 0.346624
 ...
-Epoch 3900, Loss: 0.241563
+Epoch 19000, Loss: 0.219277
 
 --- TRAINING SET RESULTS ---
-Final Loss on Training Set: 0.232993
-Model Accuracy on Training Set: 91.88%
+Final Loss on Training Set: 0.218756
+Model Accuracy on Training Set: 91.56%
 
 --- TESTING SET RESULTS ---
-Model Accuracy on Testing Set: 95.00%
+Model Accuracy on Testing Set: 93.75%
 ```
 
 ## 📈 Model Evaluation
@@ -174,7 +174,7 @@ This project showcases fundamental deep learning concepts:
 - ✅ Demonstrates core concepts of neural networks
 - ✅ Shows how backpropagation works mathematically
 - ✅ Implements L2 regularization to prevent overfitting
-- ✅ Achieves good accuracy (~90%) on purchase prediction
+- ✅ Achieves good accuracy (~94%) on purchase prediction
 - ✅ Practical example of binary classification
 
 ## 🔍 Potential Improvements
