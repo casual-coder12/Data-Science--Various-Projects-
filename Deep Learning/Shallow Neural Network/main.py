@@ -20,7 +20,8 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-N = X_train.shape[0]
+# Number of examples in the training set
+m = X_train.shape[0]
 
 # --- INITIALIZATION OF NEURAL NETWORK ---
 # Layer 1 (Hidden layer - 10 neurons)
@@ -38,9 +39,9 @@ def sigmoid_derivative(a):
     # Derivative of the sigmoid function expressed in terms of the activation 'a'
     return a * (1 - a)
 
-lr = 0.5  # Learning rate
+lr = 0.6  # Learning rate
 
-for epoch in range(10000):
+for epoch in range(20000):
     # --- FORWARD PASS ---
     # Layer 1
     z1 = np.dot(X_train, W1) + b1
@@ -50,21 +51,23 @@ for epoch in range(10000):
     z2 = np.dot(a1, W2) + b2
     a2 = sigmoid(z2)  # Final output of the network
 
-    # Calculating the cost function (Loss) using the output a2
+    # Calculating the cost function (Loss) using the output a2 with L2 regularization
+    lambd = 0.01  # Regularization parameter
+    L2_regularization_cost = (np.sum(np.square(W1)) + np.sum(np.square(W2))) * (1 / m * lambd / 2)
     eps = 1e-15
-    J = np.mean(-(y_train * np.log(a2 + eps) + (1 - y_train) * np.log(1 - a2 + eps)))
+    J = np.mean(-(y_train * np.log(a2 + eps) + (1 - y_train) * np.log(1 - a2 + eps))) + L2_regularization_cost
 
     # --- BACKWARD PASS (Backpropagation) ---
     # Gradients for Layer 2 (Output layer)
     dz2 = a2 - y_train
-    dW2 = np.dot(a1.T, dz2) / N
-    db2 = np.sum(dz2, axis=0, keepdims=True) / N
+    dW2 = np.dot(a1.T, dz2) / m + (lambd / m) * W2  # Adding L2 regularization term to the gradient
+    db2 = np.sum(dz2, axis=0, keepdims=True) / m
 
     # Gradients for Layer 1 (Hidden layer)
     # Error is backpropagated through W2 and multiplied by the derivative of the hidden layer activation
     dz1 = np.dot(dz2, W2.T) * sigmoid_derivative(a1)
-    dW1 = np.dot(X_train.T, dz1) / N
-    db1 = np.sum(dz1, axis=0, keepdims=True) / N
+    dW1 = np.dot(X_train.T, dz1) / m + (lambd / m) * W1  # Adding L2 regularization term to the gradient
+    db1 = np.sum(dz1, axis=0, keepdims=True) / m
 
     # --- UPDATE WEIGHTS AND BIASES ---
     W2 -= lr * dW2
@@ -72,7 +75,7 @@ for epoch in range(10000):
     W1 -= lr * dW1
     b1 -= lr * db1
 
-    if epoch % 100 == 0:
+    if epoch % 1000 == 0:
         print(f'Epoch {epoch:4d}, Loss: {J:.6f}')
 
 # --- EVALUATION OF THE MODEL ---

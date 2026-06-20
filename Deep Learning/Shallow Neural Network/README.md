@@ -1,8 +1,8 @@
-# Simple Neural Network - Purchase Prediction
+# Shallow Neural Network - Purchase Prediction
 
 ## 📋 Project Overview
 
-This project implements a **simple neural network from scratch** using only NumPy to predict whether a user will purchase a product based on their demographic information. The neural network is built without using high-level deep learning frameworks, demonstrating the fundamental concepts of forward propagation, backpropagation, and gradient descent.
+This project implements a **shallow neural network from scratch** using only NumPy to predict whether a user will purchase a product based on their demographic information. The neural network is built without using high-level deep learning frameworks, demonstrating the fundamental concepts of forward propagation, backpropagation, and gradient descent.
 
 ## 🎯 Objective
 
@@ -79,11 +79,14 @@ Derivative: σ'(x) = σ(x) × (1 - σ(x))
 ```
 
 #### 3. **Loss Function**
-- **Binary Cross-Entropy Loss**:
+- **Binary Cross-Entropy Loss with L2 Regularization**:
 ```
-J = -1/N × Σ[y × log(ŷ) + (1-y) × log(1-ŷ)]
+J = -1/N × Σ[y × log(ŷ) + (1-y) × log(1-ŷ)] + (λ/2N) × Σ(W²)
 ```
 - Small epsilon (1e-15) added to prevent log(0)
+- **L2 Regularization**: Implemented to prevent overfitting by penalizing large weights
+- Regularization term adds λ/2N × (sum of squared weights) to the loss function
+- Helps the model generalize better to unseen data
 
 #### 4. **Training Process**
 - **Algorithm**: Gradient Descent with Backpropagation
@@ -102,6 +105,7 @@ J = -1/N × Σ[y × log(ŷ) + (1-y) × log(1-ŷ)]
 3. **Backward Pass** (Backpropagation):
    - Calculate gradients for output layer (dW2, db2)
    - Backpropagate error to hidden layer (dW1, db1)
+   - L2 regularization gradients added to weight updates
    
 4. **Weight Update**:
    - Update weights and biases using gradient descent
@@ -162,25 +166,26 @@ This project showcases fundamental deep learning concepts:
 5. **Binary Classification**: Sigmoid activation for probability output
 6. **Feature Scaling**: Normalizing inputs for better convergence
 7. **Weight Initialization**: Preventing vanishing/exploding gradients
+8. **L2 Regularization**: Preventing overfitting by penalizing large weights
 
 ## 📚 Key Takeaways
 
 - ✅ Built entirely from scratch using NumPy (no TensorFlow/PyTorch)
 - ✅ Demonstrates core concepts of neural networks
 - ✅ Shows how backpropagation works mathematically
+- ✅ Implements L2 regularization to prevent overfitting
 - ✅ Achieves good accuracy (~90%) on purchase prediction
 - ✅ Practical example of binary classification
 
 ## 🔍 Potential Improvements
 
 1. **Validation Set**: Add a separate validation set for hyperparameter tuning
-2. **Regularization**: Add L2 regularization to prevent overfitting
-3. **Learning Rate Scheduling**: Decrease learning rate over time
-4. **Different Activations**: Try ReLU for hidden layers
-5. **Cross-Validation**: Implement k-fold cross-validation
-6. **Hyperparameter Tuning**: Optimize neurons, learning rate, epochs
-7. **Visualization**: Add loss curves and decision boundary plots
-8. **Mini-batch Training**: Implement mini-batch gradient descent for better generalization
+2. **Learning Rate Scheduling**: Decrease learning rate over time
+3. **Different Activations**: Try ReLU for hidden layers
+4. **Cross-Validation**: Implement k-fold cross-validation
+5. **Hyperparameter Tuning**: Optimize neurons, learning rate, epochs, lambda
+6. **Visualization**: Add loss curves and decision boundary plots
+7. **Mini-batch Training**: Implement mini-batch gradient descent for better generalization
 
 ## 📝 Notes
 
