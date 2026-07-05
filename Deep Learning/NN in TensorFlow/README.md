@@ -18,9 +18,7 @@ A binary classification neural network built with **TensorFlow/Keras**, trained 
 ## Requirements
 
 ```bash
-pip install -r requirements.txt
-```
-(`tensorflow`, `numpy`, `matplotlib`, `scikit-learn`)
+pip install tensorflow numpy matplotlib scikit-learn
 
 ## Running
 
